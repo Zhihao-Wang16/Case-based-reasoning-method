@@ -1,3 +1,5 @@
+# @author: Zhihao Wang ---- zhihao.wang@uni-jena.de
+
 #---------------------- Single- and Multi- source areas strategies ----------------------------------------------
 
 # We list 8 strategies for single- and multi- source areas and describe them in step.
