@@ -1,6 +1,3 @@
-# Single source area with Case-based reasoning method
-
-# It includes Similarity Functions and Landslide Susceptibility Modeling.
 
 # Author: Zhihao Wang - zhihao.wang@uni-jena.de
 
