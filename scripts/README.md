@@ -14,7 +14,7 @@ Single- and Multi- source areas strategies:
    This part considers two scenarios --- only one source area as training dataset
                                      --- more than one source areas as training datasets
 
-Hence, 8 strategies are carried out:
+Hence, 8 strategies are carried out,
 
     Transfer strategies:
         (1) Single source area with CBR
