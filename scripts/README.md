@@ -2,11 +2,13 @@
 Case-based reasoning methods:
 
    (1) Similarity_functions.R              ------- calculating the simialrity between the source area and the target area
+   
    (2) Landslide_Susceptibility_Modeling.R ------- training the landslide suseceptibility model based on results of (1)
  
 Landmark domain adaptation:
 
    (1) LMDA.py                             ------- selecting subset of the source area with same data distribution as the target area
+   
    (2) Landslide_Susceptibility_Modeling.R ------- training the landslide suseceptibility model based on results of (1)
 
 Single- and Multi- source areas strategies:
