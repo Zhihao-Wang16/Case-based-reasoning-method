@@ -2,7 +2,7 @@
 """
 Created on Thu Sep  2 16:35:21 2021
 
-@author: Zhihao Wang
+@author: Zhihao Wang --- zhihao.wang@uni-jena.de
 """
 ########### Import Functions ########################################
 
