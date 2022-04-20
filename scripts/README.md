@@ -3,6 +3,19 @@ Case-based reasoning methods:
 
    (1) Similarity_functions.R              ------- calculating the simialrity between the source area and the target area
    
+   It includes:
+   
+   RESOLUTION_SIMILARITY_FUN(source_area, target_area)
+   
+   TOTALRELIEF_SIMILARITY_FUN(source_area, target_area)
+   
+   MEANSLOPE_SIMILARITY_FUN(source_area, target_area)
+   
+   STDSLOPE_SIMILARITY_FUN(source_area, target_area)
+   
+   GEOLOGICALUNITS_SIMILARITY_FUN(source_area, target_area)
+   
+   
    (2) Landslide_Susceptibility_Modeling.R ------- training the landslide suseceptibility model based on results of (1)
  
 Landmark domain adaptation:
