@@ -199,6 +199,7 @@ source("Landslide_Susceptibility_Modeling.R")
 There are two scenarios we consider:
 
 Single source area learning --- only one source area as training data set 
+
 Multiple source areas learning --- more than one source areas as training data sets.
 
 
