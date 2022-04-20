@@ -203,54 +203,54 @@ Single source area learning --- only one source area as training data set
 Multiple source areas learning --- more than one source areas as training data sets.
 
 
-``` r
-## Single source area with CBR
+###### Single source area with CBR
     "
     This strategy is to use the most related source area as traning data.
                               f(S_highest)
     
     " 
     ### here is Paldau 10
-    
+``` r
+
     fit_paldau_singlecbr <- Landslide_Susceptibility_Modeling(fo, data2)
     
-## Single source area with DA
+```   
+###### Single source area with DA
     
-    "
-    This strategy is to use DA-drived subset of the source area as traning data.
-                   ![This is an image](https://github.com/Zhihao-Wang16/GMD_slidetransfer/raw/master/singleDA.png)   
-                               
+   
+This strategy is to use DA-drived subset of the source area as traning data.
 
-    " 
- 
+   
+    ![singleDA](https://github.com/Zhihao-Wang16/GMD_slidetransfer/raw/master/singleDA.png) 
+ ``` r
     fit_paldau_singleda <- Landslide_Susceptibility_Modeling(fo, bu_paldau_landmarks)
     fit_waidhofen_singleda <- Landslide_Susceptibility_Modeling(fo, bu_waidhofen_landmarks)
+ ```
 
-
-## Multiple source areas with CBR
+###### Multiple source areas with CBR
     
     "
     This strategy is to use the related source areas as traning data.
                          ¡Æ w_i*f_i(S_i)
 
     " 
-    
+``` r   
     fit_paldau <- Landslide_Susceptibility_Modeling(fo, data2)
     fit_waidhofen <- Landslide_Susceptibility_Modeling(fo, data3)
     
     fit_multicbr <- overall_sim_waidhofen*fit_waidhofen + overall_sim_paldau*fit_paldau 
-
-## Multiple source areas with DA
+```
+###### Multiple source areas with DA
     
     "
     This strategy is to use DA-drived subsets of all source area as traning data.
                         1/N * ¡Æ f_i(D_i)
     " 
-    
+``` r  
     fit_multida <- 1/2 * fit_paldau + 1/2 * fit_paldau
-    
+```   
 
-## Multiple source areas with CBR and DA
+###### Multiple source areas with CBR and DA
     
     
     "
@@ -259,23 +259,24 @@ Multiple source areas learning --- more than one source areas as training data s
                          ¡Æ w_i * f_i(D_i)
 
     " 
-    
+``` r    
     fit_multicbrda <- overall_sim_waidhofen*fit_waidhofen_singleda + overall_sim_paldau*fit_paldau_singleda
-    
+```    
 
-## Benchmark
+##### Benchmark
 
-### Single source area benchmark
+###### Single source area benchmark
     
     "
     This strategy is to use each source area as traning data.
     
                            f_i(S_i)
     " 
+ ``` r
     fit_singlebenchmark <- Landslide_Susceptibility_Modeling(fo, data3) # and data2
-    
+ ```   
 
-### Multiple source areas benchmark
+###### Multiple source areas benchmark
     
     "
     This strategy is to use all source area as traning data.
@@ -283,10 +284,11 @@ Multiple source areas learning --- more than one source areas as training data s
                        1/N * ¡Æf_i(S_i)
 
     " 
+ ``` r
     fit_multibenchmark <- 1/2*fit_waidhofen + 1/2*fit_paldau
+ ```
 
-
-### Target benchmark
+###### Target benchmark
 
     
     "
@@ -294,8 +296,7 @@ Multiple source areas learning --- more than one source areas as training data s
     
                             f(T)
     " 
-    
+  ``` r
     fit_targetbenchmark <- Landslide_Susceptibility_Modeling(fo, data1)
-
-```
+  ```
 
