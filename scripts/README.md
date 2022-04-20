@@ -61,12 +61,12 @@ Hence, 8 strategies are carried out,
     Transfer strategies:
         (1) Single source area with CBR
         (2) Single source area with DA
-        (3) Multi source areas with CBR
-        (4) Multi source areas with DA
-        (5) Multi source areas with CBR and DA
+        (3) Multiple source areas with CBR
+        (4) Multiple source areas with DA
+        (5) Multiple source areas with CBR and DA
      Transfer benchmarks:
         (1) Single source area benchmark
-        (2) Multi source areas benchmark
+        (2) Multiple source areas benchmark
      Target benchmark:
         (1) Targte benchmark
      
