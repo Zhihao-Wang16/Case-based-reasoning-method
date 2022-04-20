@@ -6,9 +6,7 @@ data_2.csv: a data frame with point samples of landslide and non-landslide locat
 
 data_3.csv: a data frame with point samples of landslide and non-landslide locations from the study area named Waidhofen with 10 m resolution.
 
-attributes.rds: attributes of all study area for calculating overall similaritis
-
-It includes:
+attributes.rds: attributes of all study area for calculating overall similaritis. It includes:
 
     Geological characteristics: igneous, sedimentary, metamorphic
     Data characteristics: spatial resolution
