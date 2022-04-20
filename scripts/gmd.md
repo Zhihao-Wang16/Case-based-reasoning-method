@@ -166,7 +166,7 @@ if __name__ == '__main__':
      source_beta = np.append(source_area, beta, axis = 1)
      np.savetxt("source_beta_paldau.csv", source_beta, delimiter=',')
      
-   the process of Waidhofen 10 is same as taht of Paldau 10, the result is source_beta_waidhofen.csv.
+## the process of Waidhofen 10 is same as taht of Paldau 10, the result is source_beta_waidhofen.csv.
 ```
 
 ``` r
