@@ -37,9 +37,9 @@
    
    #### Arguments:
    
-   source_area ---- a `list`, values of attributes for study area for train data
+   source_area ---- a `list`, values of attributes for study area
 
-   target_area ---- a `list`, values of attributes for study area for test data
+   target_area ---- a `list`, values of attributes for study area
    
    ### (2) Landslide_Susceptibility_Modeling.R ------- training the landslide suseceptibility model based on results of (1)
  
