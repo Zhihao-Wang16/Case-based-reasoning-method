@@ -207,7 +207,7 @@ Multiple source areas learning --- more than one source areas as training data s
 ## Single source area with CBR
     "
     This strategy is to use the most related source area as traning data.
-                              f(S_highest)
+                              $$f(S_highest)$$
     
     " 
     ### here is Paldau 10
