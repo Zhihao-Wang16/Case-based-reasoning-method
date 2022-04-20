@@ -1,7 +1,7 @@
 Transfer learning for landslide susceptibility modelling using domain adaptation(DA) and case-based reasoning(CBR)
 ================
 Zhihao Wang
-First published 28 March 2021, last edited 19 April 2021
+First published 28 March 2022, last edited 19 April 2022
 
 ## Preface
 
@@ -228,7 +228,7 @@ Multiple source areas learning --- more than one source areas as training data s
     
     "
     This strategy is to use the related source areas as traning data.
-                         ¡Æ w_i*f_i(S_i)
+                         Â¡Ã† w_i*f_i(S_i)
 
     " 
     fit_paldau <- Landslide_Susceptibility_Modeling(fo, data2)
@@ -240,7 +240,7 @@ Multiple source areas learning --- more than one source areas as training data s
     
     "
     This strategy is to use DA-drived subsets of all source area as traning data.
-                        1/N * ¡Æ f_i(D_i)
+                        1/N * Â¡Ã† f_i(D_i)
     " 
     
     fit_multida <- 1/2 * fit_paldau + 1/2 * fit_paldau
@@ -252,7 +252,7 @@ Multiple source areas learning --- more than one source areas as training data s
     "
     This strategy is to use DA-drived subsets of the related source areas as traning data.
     
-                         ¡Æ w_i * f_i(D_i)
+                         Â¡Ã† w_i * f_i(D_i)
 
     " 
     
@@ -276,7 +276,7 @@ Multiple source areas learning --- more than one source areas as training data s
     "
     This strategy is to use all source area as traning data.
     
-                       1/N * ¡Æf_i(S_i)
+                       1/N * Â¡Ã†f_i(S_i)
 
     " 
     fit_multibenchmark <- 1/2*fit_waidhofen + 1/2*fit_paldau
