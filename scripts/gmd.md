@@ -218,11 +218,11 @@ Multiple source areas learning --- more than one source areas as training data s
     
     "
     This strategy is to use DA-drived subset of the source area as traning data.
+                     ![image](https://github.com/Zhihao-Wang16/GMD_slidetransfer/scripts/singleDA.PNG)     
                                
-                               ![image](https://github.com/Zhihao-Wang16/GMD_slidetransfer/blob/main/scripts/singleDA.PNG)
 
     " 
-    ![image](https://github.com/Zhihao-Wang16/GMD_slidetransfer/blob/main/scripts/singleDA.PNG)
+ 
     fit_paldau_singleda <- Landslide_Susceptibility_Modeling(fo, bu_paldau_landmarks)
     fit_waidhofen_singleda <- Landslide_Susceptibility_Modeling(fo, bu_waidhofen_landmarks)
 
@@ -232,8 +232,6 @@ Multiple source areas learning --- more than one source areas as training data s
     "
     This strategy is to use the related source areas as traning data.
                          ¡Æ w_i*f_i(S_i)
-                    
-
 
     " 
     
