@@ -219,7 +219,7 @@ Multiple source areas learning --- more than one source areas as training data s
     "
     This strategy is to use DA-drived subset of the source area as traning data.
                                
-                               <img src="singleda.png" width="100%" style="display: block; margin: auto;" />
+                               <img src="singleDA.png" width="100%" style="display: block; margin: auto;" />
 
     " 
     
