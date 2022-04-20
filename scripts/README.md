@@ -35,6 +35,12 @@
    
    ![geounits](https://user-images.githubusercontent.com/60289894/164326199-90a31094-34d5-414c-ad1d-c173dc7150b3.PNG)
    
+   #### Arguments:
+   
+   source_area ---- a `list`, values of attributes for study area for train data
+
+   target_area ---- a `list`, values of attributes for study area for test data
+   
    ### (2) Landslide_Susceptibility_Modeling.R ------- training the landslide suseceptibility model based on results of (1)
  
 # Landmark domain adaptation:
@@ -43,7 +49,7 @@
    
    
    
-   ### (2) Landslide_Susceptibility_Modeling.R ------- training the landslide suseceptibility model based on results of (1)
+   ### (2) Landslide_Susceptibility_Modeling.R ------- training landslide suseceptibility model based on results of (1)
 
 # Single- and Multi- source areas strategies:
 
