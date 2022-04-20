@@ -64,6 +64,8 @@ Hence, 8 strategies are carried out,
      Target benchmark:
         (1) Targte benchmark
      
-In Strategies.R, you can find the steps for those strategies.
+# Examples for those strategies
+
+Please see slidetransfer.md to find more details.
 
 
