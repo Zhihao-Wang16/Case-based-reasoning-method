@@ -34,8 +34,10 @@ In addition, you will need the packages `numpy`, `sklearn.metrics`,
 We use Burgenland with a 10 m * 10 m resolution as the target area and Paldau with
 a 10 m * 10 m resolution and Waidhofen with a 10 m * 10 m resolution as source areas.
 
-data_1.csv are from the study area named Burgenland . 
+data_1.csv are from the study area named Burgenland. 
+
 data_2.csv are from the study area named Paldau.
+
 data_3.csv are from the study area named Waidhofen.
 
 Note: these data are subset of whole data sets for quick going through methods used.
@@ -45,9 +47,9 @@ Let's get started by preparing the data set:
 
 ``` r
 
-data1 <- read.csv("~/test_data/data_1.csv")
-data2 <- read.csv("~/test_data/data_2.csv")
-data3 <- read.csv("~/test_data/data_3.csv")
+data1 <- read.csv("~/test_data/data_1.csv") # Burgenland
+data2 <- read.csv("~/test_data/data_2.csv") # Paldau
+data3 <- read.csv("~/test_data/data_3.csv") # Waidhofen
 
 # Set up lists of features and model formulas:
 vars <- c("slope", "cslope", "log.carea", "plancurv", "profcurv")
