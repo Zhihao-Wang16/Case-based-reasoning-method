@@ -9,9 +9,9 @@
 # Similarity functions for Geological characteristics, Data characteristics and Characteristics of study area
 
 # @Description of parameters
-# # source_area ---- a `list`, values of attributes for study area for train data
+# # source_area ---- a `list`, values of attributes for study area
 # 
-# # target_area ---- a `list`, values of attributes for study area for test data
+# # target_area ---- a `list`, values of attributes for study area
 
 
 ### Spatial Resolution
