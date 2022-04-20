@@ -1,7 +1,7 @@
 
 # Case-based reasoning methods:
 
-   (1) Similarity_functions.R              ------- calculating the simialrity between the source area and the target area
+   ### (1) Similarity_functions.R              ------- calculating the simialrity between the source area and the target area
    
    It includes:
    
@@ -35,17 +35,17 @@
    
    ![geounits](https://user-images.githubusercontent.com/60289894/164326199-90a31094-34d5-414c-ad1d-c173dc7150b3.PNG)
    
-   (2) Landslide_Susceptibility_Modeling.R ------- training the landslide suseceptibility model based on results of (1)
+   ### (2) Landslide_Susceptibility_Modeling.R ------- training the landslide suseceptibility model based on results of (1)
  
 # Landmark domain adaptation:
 
-   (1) LMDA.py                             ------- selecting subset of the source area with same data distribution as the target area
+   ### (1) LMDA.py                             ------- selecting subset of the source area with same data distribution as the target area
    
    
    
-   (2) Landslide_Susceptibility_Modeling.R ------- training the landslide suseceptibility model based on results of (1)
+   ### (2) Landslide_Susceptibility_Modeling.R ------- training the landslide suseceptibility model based on results of (1)
 
-Single- and Multi- source areas strategies:
+# Single- and Multi- source areas strategies:
 
    This part considers two scenarios --- only one source area as training dataset
                                      --- more than one source areas as training datasets
@@ -65,3 +65,5 @@ Hence, 8 strategies are carried out,
         (1) Targte benchmark
      
 In Strategies.R, you can find the steps for those strategies.
+
+
