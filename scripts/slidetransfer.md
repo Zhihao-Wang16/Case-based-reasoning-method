@@ -214,8 +214,12 @@ This strategy is to use the most related source area as traning data.
 ``` r
     ### here is Paldau 10
     fit_paldau_singlecbr <- Landslide_Susceptibility_Modeling(fo, data2)
+    par(mfrow=c(2,3),mex=0.7,mar=c(5,5,2,2))
+    plot(fit_paldau_singlecbr, residuals = FALSE, se = TRUE, ylim = c(-3,3))
     
 ```   
+![rsinglecbr](https://user-images.githubusercontent.com/60289894/164337269-1fd79b08-530d-478d-b3fc-e445b84beb2d.png)
+
 ###### Single source area with DA
 
 This strategy is to use DA-drived subset of the source area as traning data.
@@ -238,7 +242,10 @@ This strategy is to use the related source areas as traning data.
     fit_paldau <- Landslide_Susceptibility_Modeling(fo, data2)
     fit_waidhofen <- Landslide_Susceptibility_Modeling(fo, data3)
     
-    fit_multicbr <- overall_sim_waidhofen*fit_waidhofen + overall_sim_paldau*fit_paldau 
+    predbupaldau <- predict(fit_paldau, newdata = data1, type = "response")
+    predbuwaidhofen <- predict(fit_waidhofen, newdata = data1, type = "response")
+    
+    final_predmulticbr <- overall_sim_waidhofen*predbuwaidhofen + overall_sim_paldau*predbupaldau 
 ```
 ###### Multiple source areas with DA
 
@@ -247,7 +254,10 @@ This strategy is to use DA-drived subsets of all source area as traning data.
 ![multida](https://user-images.githubusercontent.com/60289894/164320012-9c4339cc-98f9-4ee9-8e16-847924110578.PNG)
 
 ``` r  
-    fit_multida <- 1/2 * fit_paldau + 1/2 * fit_waidhofen
+    predbupaldauda <- predict(fit_paldau, newdata = data1, type = "response")
+    predbuwaidhofenda <- predict(fit_waidhofen, newdata = data1, type = "response")
+    
+    final_predmultida <- 1/2 * predbuwaidhofenda + 1/2 * predbupaldauda
 ```   
 
 ###### Multiple source areas with CBR and DA
@@ -257,7 +267,7 @@ This strategy is to use DA-drived subsets of the related source areas as traning
 ![multicbrda](https://user-images.githubusercontent.com/60289894/164320020-c3a73f2c-37d9-4917-9f61-1eb4f13184c0.PNG)
 
 ``` r    
-    fit_multicbrda <- overall_sim_waidhofen*fit_waidhofen_singleda + overall_sim_paldau*fit_paldau_singleda
+    final_predmulticbrda <- overall_sim_waidhofen*predbuwaidhofenda + overall_sim_paldau*predbupaldauda
 ```    
 
 ##### Benchmark
@@ -269,7 +279,9 @@ This strategy is to use each source area as traning data.
 ![singlebench](https://user-images.githubusercontent.com/60289894/164320033-003f4b61-7d3b-4520-af2e-d6a34120ddcb.PNG)    
                   
  ``` r
+ 
     fit_singlebenchmark <- Landslide_Susceptibility_Modeling(fo, data3) # and data2
+    
  ```   
 
 ###### Multiple source areas benchmark
@@ -279,7 +291,7 @@ This strategy is to use all source area as traning data.
 ![multibench](https://user-images.githubusercontent.com/60289894/164320024-7a444783-0cea-4d75-aff8-dac9d8e0d343.PNG)
 
  ``` r
-    fit_multibenchmark <- 1/2*fit_waidhofen + 1/2*fit_paldau
+    final_predmultibenchmark <- 1/2*predbuwaidhofen + 1/2*predbupaldau
  ```
 
 ###### Target benchmark
