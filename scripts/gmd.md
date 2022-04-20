@@ -137,36 +137,36 @@ Landmark domain adaptation:
 
 import LMDA # make sure you are in the right path
 
-# if __name__ == '__main__':
-#   ## import source area Paldau 10
-#   
-#     source_area = pd.DataFrame(pd.read_csv("data_2.csv"),
-#                         columns=["x","y","dem","slope","carea", "cslope", "plancurv", "profcurv",
-#                                  "log.carea", "slides"])
-#     source_label = source_area["slides"].values.astype(int)
-#     source_predictors = pd.DataFrame(source_area,
-#                         columns=["carea", "slope", "cslope", "plancurv", "profcurv",
-#                                  "log.carea"]).values
-#     source_predictors = torch.tensor(source_predictors)
-#     
-#   ## import target area Burgenland 10
-# 
-#     target = pd.DataFrame(pd.read_csv("data_1.csv"),
-#                          columns=["carea", "slope", "cslope", "plancurv", "profcurv",
-#                                  "log.carea"]).values
-#     target = torch.tensor(target)
-#
-#   ## Obtaining beta
-#   
-#     a = selects(source_predictors, target, source_label)
-#     beta = np.array(a['x'])
-#     
-#   ## Save source area with beta as .csv file
-#   
-#     source_beta = np.append(source_area, beta, axis = 1)
-#     np.savetxt("source_beta_paldau.csv", source_beta, delimiter=',')
-#     
-#   the process of Waidhofen 10 is same as taht of Paldau 10, the result is source_beta_waidhofen.csv.
+if __name__ == '__main__':
+## import source area Paldau 10
+   
+     source_area = pd.DataFrame(pd.read_csv("data_2.csv"),
+                         columns=["x","y","dem","slope","carea", "cslope", "plancurv", "profcurv",
+                                  "log.carea", "slides"])
+     source_label = source_area["slides"].values.astype(int)
+     source_predictors = pd.DataFrame(source_area,
+                         columns=["carea", "slope", "cslope", "plancurv", "profcurv",
+                                  "log.carea"]).values
+     source_predictors = torch.tensor(source_predictors)
+     
+   ## import target area Burgenland 10
+ 
+     target = pd.DataFrame(pd.read_csv("data_1.csv"),
+                          columns=["carea", "slope", "cslope", "plancurv", "profcurv",
+                                  "log.carea"]).values
+     target = torch.tensor(target)
+
+   ## Obtaining beta
+   
+     a = selects(source_predictors, target, source_label)
+     beta = np.array(a['x'])
+     
+   ## Save source area with beta as .csv file
+   
+     source_beta = np.append(source_area, beta, axis = 1)
+     np.savetxt("source_beta_paldau.csv", source_beta, delimiter=',')
+     
+   the process of Waidhofen 10 is same as taht of Paldau 10, the result is source_beta_waidhofen.csv.
 ```
 
 ``` r
