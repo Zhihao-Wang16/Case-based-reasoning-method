@@ -247,7 +247,7 @@ This strategy is to use DA-drived subsets of all source area as traning data.
 ![multida](https://user-images.githubusercontent.com/60289894/164320012-9c4339cc-98f9-4ee9-8e16-847924110578.PNG)
 
 ``` r  
-    fit_multida <- 1/2 * fit_paldau + 1/2 * fit_paldau
+    fit_multida <- 1/2 * fit_paldau + 1/2 * fit_waidhofen
 ```   
 
 ###### Multiple source areas with CBR and DA
