@@ -9,15 +9,9 @@
 # Similarity functions for Geological characteristics, Data characteristics and Characteristics of study area
 
 # @Description of parameters
-# # source_area ---- a `data.frame`, rows represent values of attributes for study area for train data
+# # source_area ---- a `list`, attributes for study area for train data
 #
-# # target_area ---- a `data.frame`, rows represent values of attributes for study area for test data
-
-# @Example
-# Spatial resolution between Ecuador with 10m resolution and Bologna with 25m resolution
-# # source_area$resolution = 10
-# # target_area$resolution = 25
-# # RESOLUTION_SIMILARITY_FUN(source_area, target_area)
+# # target_area ---- a `list`, attributes for study area for test data
 
 
 ### Spatial Resolution
@@ -38,7 +32,7 @@ RESOLUTION_SIMILARITY_FUN <- function(source_area, target_area){
 
 }
 
-### Total relief
+### Total relief: the maximum minus minimum elevation within the study area
 
 TOTALRELIEF_SIMILARITY_FUN <- function(source_area, target_area){
 
@@ -71,7 +65,7 @@ STDSLOPE_SIMILARITY_FUN <- function(source_area, target_area){
 
 }
 
-### GEOLOGICAL UNITS
+### GEOLOGICAL UNITS: Igneous, Sedimentary, Metamorphic
 
 GEOLOGICALUNITS_SIMILARITY_FUN <- function(source_area, target_area){
   
