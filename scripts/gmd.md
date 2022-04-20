@@ -63,7 +63,7 @@ fo <- as.formula(slides ~ s(slope, k = 4)+s(plancurv, k =4) +
 
 ### Strategies
 
-we introduce case-based reasoning method and domain adaptation used in paper, respectively.
+We introduce case-based reasoning method and domain adaptation used in paper, respectively.
 
 Case-based reasoning method:
 
