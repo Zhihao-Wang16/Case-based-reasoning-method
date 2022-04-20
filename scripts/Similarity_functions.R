@@ -10,14 +10,8 @@
 
 # @Description of parameters
 # # source_area ---- a `list`, values of attributes for study area for train data
-#
+# 
 # # target_area ---- a `list`, values of attributes for study area for test data
-
-# @Example
-# Spatial resolution between Ecuador with 10m resolution and Bologna with 25m resolution
-# # source_area$resolution = 10
-# # target_area$resolution = 25
-# # RESOLUTION_SIMILARITY_FUN(source_area, target_area)
 
 
 ### Spatial Resolution
