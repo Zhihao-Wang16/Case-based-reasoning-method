@@ -207,7 +207,7 @@ Multiple source areas learning --- more than one source areas as training data s
 ## Single source area with CBR
     "
     This strategy is to use the most related source area as traning data.
-                              f(S_highest )
+                              f(S_highest)
     
     " 
     ### here is Paldau 10
@@ -219,7 +219,7 @@ Multiple source areas learning --- more than one source areas as training data s
     "
     This strategy is to use DA-drived subset of the source area as traning data.
                                
-                               f_i (D_i )
+                               f_i (D_i)
 
     " 
     
@@ -294,7 +294,7 @@ Multiple source areas learning --- more than one source areas as training data s
                             f(T)
     " 
     
-    fit_targetbench <- Landslide_Susceptibility_Modeling(fo, data1)
+    fit_targetbenchmark <- Landslide_Susceptibility_Modeling(fo, data1)
 
 ```
 
