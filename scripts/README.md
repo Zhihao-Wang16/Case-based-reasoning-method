@@ -46,7 +46,7 @@
 # Landmark domain adaptation:
 
    ### (1) LMDA.py                             ------- selecting subset of the source area with same data distribution as the target area
-   
+   (Gong, B., Grauman, K., and Sha, F.: Connecting the Dots with Landmarks: Discriminatively Learning Domain-Invariant Features for Unsupervised Domain Adaptation, International conference on machine learning (ICML), 28, 222-230, Proceedings of the 30th International Conference on Machine Learning, 2013.)
    
    
    ### (2) Landslide_Susceptibility_Modeling.R ------- training landslide suseceptibility model based on results of (1)
