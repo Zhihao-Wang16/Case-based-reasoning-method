@@ -18,7 +18,7 @@
 
 RESOLUTION_SIMILARITY_FUN <- function(source_area, target_area){
 
-  if (source_area['spatial resolution'] <= target_area['spatial resolution']) {
+  if (source_area['spatial resolution'] >= target_area['spatial resolution']) {
 
     sim_resolution <- 2 ^ -(2 * abs(log10(target_area['spatial resolution'])-log10(source_area['spatial resolution']))) ^ 0.5
 
